@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Xbox_one_logo.svg/2048px-Xbox_one_logo.svg.png"
+    />
+    <title>Xbox Games Showcase 2024 | Xbox</title>
+  </head>
+  <header>
+    <a href="https://www.microsoft.com/es-es/"
+      ><img
+        src="data:image/png;base64,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"
+        style="position: absolute;; top: 11px; left: 200px"
+        width="135"
+    /></a>
+    <a href="https://www.xbox.com/en-US?xr=mebarnav"
+      ><img
+        src="data:image/png;base64,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"
+        style="position: absolute; top: 22px; left: 355px"
+        height="25"
+    /></a>
+    <details
+      style="position: absolute; top: 22px; left: 470px; user-select: none"
+    >
+      <summary>Game Pass</summary>
+      <ul>
+        <li>
+          <a href="https://www.xbox.com/en-US/xbox-game-pass?xr=shellnav"
+            >Join Game Pass</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-US/xbox-game-pass/games?xr=shellnav"
+            >Browse Games</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-us/xbox-game-pass/ultimate?xr=shellnav"
+            >Game Pass Ultimate</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-US/xbox-game-pass/pc-game-pass?xr=shellnav"
+            >PC Game Pass</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-us/xbox-game-pass/core?xr=shellnav"
+            >Game Pass Core</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-us/xbox-game-pass/deals?xr=shellnav"
+            >Deals with Game Pass</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-US/cloud-gaming?xr=shellnav"
+            >Xbox Cloud Gameing (Beta)</a
+          >
+        </li>
+      </ul>
+    </details>
+    <details
+      style="position: absolute; top: 22px; left: 585px; user-select: none"
+    >
+      <summary>Games</summary>
+      <ul>
+        <li>
+          <a href="https://www.xbox.com/en-us/games?xr=shellnav">Games home</a>
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-us/games/all-games/console?PlayWith=XboxSeriesX%7CS%2CXboxOne&xr=shellnav"
+            >Shop all console games</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-us/games/all-games/pc?PlayWith=PC&xr=shellnav"
+            >Shop all PC games</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-us/play?xr=shellnav">Cloud games</a>
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-us/games/free-to-play?xr=shellnav"
+            >Free-to-Play games</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-us/games/optimized?xr=shellnav"
+            >Optimized games</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-us/games/backward-compatibility?xr=shellnav"
+            >Backwards compatible games</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-us/promotions/sales/sales-and-specials?xr=shellnav"
+            >Sales & Specials</a
+          >
+        </li>
+        <li>
+          <a href="https://account.microsoft.com/billing/redeem?ref=xboxcom"
+            >Redeem Code</a
+          >
+        </li>
+      </ul>
+    </details>
+    <details
+      style="position: absolute; top: 22px; left: 675px; user-select: none"
+    >
+      <summary>Devices</summary>
+      <ul>
+        <div>Consoles</div>
+        <li>
+          <a href="https://www.xbox.com/en-US/consoles?xr=shellnav"
+            >Xbox Consoles</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-US/consoles/xbox-series-x?xr=shellnav"
+          >
+            Xbox Series X</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-US/consoles/xbox-series-s?xr=shellnav"
+            >Xbox Series S</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-US/xbox-all-access?xr=shellnav"
+            >Xbox All Access</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-US/consoles/all-consoles?xr=shellnav"
+            >Shop All Consoles</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-US/consoles/help-me-choose?xr=shellnav"
+            >Help me Choose</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-US/where-to-buy?xr=shellnav"
+            >Where to Buy</a
+          >
+        </li>
+        <div>Accessories</div>
+        <li>
+          <a href="https://www.xbox.com/en-US/accessories?xr=shellnav"
+            >Shop all accessories</a
+          >
+        </li>
+        <li>
+          <a href="https://xboxdesignlab.xbox.com/es-es/?xr=shellnav"
+            >Desing your controller</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.xbox.com/en-US/accessories?xr=shellnav#controllers"
+            >Controllers</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-US/accessories?xr=shellnav#headsets"
+            >Headsets</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-us/accessories?xr=shellnav#storage"
+            >Hard drives & storage</a
+          >
+        </li>
+        <li>
+          <a href="https://www.xbox.com/en-US/accessories?xr=shellnav#mobile"
+            >Mobile gaming accessories</a
+          >
+        </li>
+        <div>PC Devices</div>
+        <li>
+          <a href="https://www.xbox.com/en-US/pc-gaming?xr=shellnav"
+            >Gaming PCs</a
+          >
+        </li>
+      </ul>
+    </details>
+    <section
+      style="position: absolute; top: 23px; left: 767px; user-select: none"
+    >
+      <a href="https://www.xbox.com/en-US/play?xr=shellnav">Play</a>
+    </section>
+    <details style="position: absolute; top: 22px; left: 825px; user-select: none">
+      <summary>Store</summary>
+        <ul>
+          <li>
+            <a href="https://www.xbox.com/en-us/games?xr=shellnav"
+              >Shop Games</a
+            >
+          </li>
+          <li>
+            <a href="https://www.xbox.com/en-us/xbox-game-pass?xr=shellnav"
+              >Shop Game Pass</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.xbox.com/en-us/consoles/all-consoles?xr=shellnav"
+              >Shop Consoles</a
+            >
+          </li>
+          <li>
+            <a href="https://www.xbox.com/en-us/accessories?xr=shellnav"
+              >Shop Accessories</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.xbox.com/en-us/promotions/sales/sales-and-specials?xr=shellnav"
+              >Shop Deals</a
+            >
+          </li>
+        </ul>
+      </summary>
+    </details>
+    <details style="position: absolute; top: 22px; left: 900px; user-select: none">
+      <summary>Community</summary>
+      <ul>
+        <div>Community</div>
+        <li><a href="https://www.xbox.com/en-US/community?xr=shellnav">Xbox community</a></li>
+        <li><a href="https://www.xbox.com/en-us/community/fanfest?xr=shellnav">FanFest</a></li>
+        <li><a href="https://news.xbox.com/en-us/?xr=shellnav">Xbox News</a></li>
+        <li><a href="https://www.xbox.com/en-US/community/sustainability?xr=shellnav">Sustainabillity</a></li>
+        <div>For Everyone</div>
+        <li><a href="https://www.xbox.com/en-US/community/for-everyone?xr=shellnav">Our philosophy</a></li>
+        <li><a href="https://www.xbox.com/en-US/family-hub?xr=shellnav">Family hub</a></li>
+        <li><a href="https://www.xbox.com/en-US/community/for-everyone/accessibility?xr=shellnav">Accesibility gaming</a></li>
+        <li><a href="https://www.xbox.com/en-US/legal/community-standards?xr=shellnav">Community standars</a></li>
+        <div>Xbox Gear Shop</div>
+        <li><a href="https://gear.xbox.com/?xr=shellnav">Shop gear</a></li>
+        <div>Apps & Entertainment</div>
+        <li><a href="https://www.xbox.com/en-US/apps/xbox-app-for-mobile?xr=shellnav">Xbox app for mobile</a></li>
+        <li><a href="https://www.xbox.com/en-US/apps/xbox-app-for-pc?xr=shellnav">Xbox app for windows</a></li>
+        <li><a href="https://www.xbox.com/en-US/apps/xbox-app-for-tv?xr=shellnav">Xbox app for smart TV</a></li>
+        <li><a href="https://www.xbox.com/en-US/apps/xbox-game-pass-mobile-app?xr=shellnav">Xbox Game Pass mobile app</a></li>
+        <li><a href="https://www.xbox.com/en-US/apps/family-settings-app?xr=shellnav">Xbox Family Settings app</a></li>
+        <li><a href="https://www.xbox.com/en-US/entertainment/console-apps?xr=shellnav">Console entertainment apps</a></li>
+      </ul>
+    </details>
+    <details style="position: absolute; top: 22px; left: 1020px; user-select: none">
+      <summary>Support</summary>
+        <ul>
+          <li><a href="https://support.xbox.com/en-US/">Support home</a></li>
+          <li><a href="https://support.xbox.com/en-US/xbox-live-status">Xbox status</a></li>
+          <li><details><summary>Help topics</summary>
+            <ul><li><a href="https://support.xbox.com/en-US/help/account-profile/browse">Account and profile</a></li>
+            <li><a href="https://support.xbox.com/en-US/help/subscriptions-billing/browse">Subsciptions & billing</a></li>
+            <li><a href="https://support.xbox.com/en-US/help/hardware-network/browse">Hardware & networking</a></li>
+            <li><a href="https://support.xbox.com/en-US/help/family-online-safety/browse">Family & online safety</a></li>
+            <li><a href="https://support.xbox.com/en-US/help/games-apps/browse">Games & apps</a></li>
+            <li><a href="https://support.xbox.com/en-US/help/friends-social-activity/browse">Friends & social activity</a></li>
+          </ul>
+          </details></li>
+          <li><a href="https://support.xbox.com/en-US/help/accessible-gaming">Accesible gaming</a></li>
+          <li><a href="https://support.xbox.com/en-US/help/hardware-network/settings-updates/whats-new-xbox-one-system-updates">Xbox system updates</a></li>
+        </ul>
+    </details>
+    <details style="position: absolute; top: 22px; left: 1120px; user-select: none">
+      <summary>My Xbox</summary>
+      <ul>
+        <li><a href="https://account.xbox.com/en-US/social?xr=shellnav">Home</a></li>
+        <li><a href="https://account.xbox.com/en-US/Profile?xr=shellnav">Profile</a></li>
+        <li><a href="https://www.xbox.com/en-US/rewards">Rewards</a></li>
+        <li><a href="https://www.xbox.com/en-US/xbox-mastercard?ocid=mcoffer_int_omc_xbo_MSFT-Web-XboxSite-UHF-Header&channelname=BANNER&referrerid=MSFT-Web-XboxSite-UHF-Header&xr=shellnav">Xbox Mastercard</a></li>
+        <li><a href="https://www.xbox.com/en-US/wishlist?xr=shellnav">Wish list</a></li>
+      </ul>
+    </details>
+    <details style="position: absolute; top: 22px; left: 1227px; user-select: none">
+      <summary>Developers</summary>
+      <ul>
+        <li><a href="https://developer.microsoft.com/en-us/games/publish?xr=shellnav">Games</a></li>
+        <li><a href="https://www.xbox.com/en-US/designed-for-xbox?xr=shellnav">Desingned for Xbox</a></li>
+      </ul>
+    </details>
+  </header>
+<body>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image {
+      display: block;
+      width: auto;
+      height: 100%;
+    }
+
+    .text {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 40px;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+
+  <div class="container">
+    <img
+      src="https://assets.xboxservices.com/assets/1f/0d/1f0d20cb-3bce-499c-a1f0-a593cf69948f.jpg?n=7400229_Super-Hero-1400_Dual-VisID_1920x1080_02.jpg"
+      alt="Sample Image"
+      class="image"
+    />
+    <div class="text">
+      Xbox Games Showcase followed by Call of Duty®: Black Ops 6 Direct
+      See the latest game trailers, world premieres, and news all in one place.
+    <a href="https://www.youtube.com/watch?v=ZZ6gafqCjsY">WATCH THE SHOW</a></div>
+  </div>
+
+</body>
+</html>
