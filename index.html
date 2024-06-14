@@ -301,54 +301,89 @@
       </ul>
     </details>
   </header>
-<body>
-  <style>
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      <style>
+          body, html {
+              height: 90%;
+              margin: 150px;
+              overflow: scroll;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-family: Arial, sans-serif;
+          }
+  
+          .flex-container {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+          }
+  
+          .container {
+              position: relative;
+              width: 100%;
+              height: 800px;
+              margin-bottom: 10px;
+          }
+  
+          .image {
+              display: block;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+          }
+  
+          .text {
+              position: absolute;
+              color: white;
+              font-size: 24px;
+              padding: 10px;
+              text-align: center;
+          }
+  
+          .top {
+              justify-content: flex-start;
+              align-items: flex-start;
+              top: 65%;
+              left: 12%;
+              transform: translate(0, 0);
+          }
+  
+          .center {
+              justify-content: center;
+              top: 43%;
+              left: 23%;
+              transform: translate(-50%, -50%);
+          }
+  
+          .bottom {
+              bottom: 0%;
+              right: 30%;
+              transform: translate(0, 0);
+          }
+      </style>
+  </head>
+  <body>
+      <div class="flex-container">
+          <div class="container">
+              <img src="https://assets.xboxservices.com/assets/1f/0d/1f0d20cb-3bce-499c-a1f0-a593cf69948f.jpg?n=7400229_Super-Hero-1400_Dual-VisID_1920x1080_02.jpg" alt="Sample Image 1" class="image">
+              <div class="text top-left"> Xbox Games Showcase followed by Call of Duty®: Black Ops 6 Direct See
+                the latest game trailers, world premieres, and news all in one place.
+                <a href="https://www.youtube.com/watch?v=ZZ6gafqCjsY">WATCH THE SHOW</a></div>
+          </div>
+          <div class="container">
+              <img src="https://assets.xboxservices.com/assets/9e/df/9edf550b-18bb-4aaf-9646-66700917e0f2.jpg?n=7400229_Page-Hero-1084_Declassify_1920x720.jpg" alt="Sample Image 2" class="image">
+              <div class="text center"><h1>Call of Duty®: Black Ops 6</h1>
+                Forced to go rogue. Hunted from within. This is <br>Black Ops 6.<br><a href="https://www.xbox.com/en-US/games/call-of-duty-black-ops-6">PRE-ORDER NOW</a></div>
+          </div>
+          <div class="container">
+              <img src="https://assets.xboxservices.com/assets/b1/8d/b18d532f-b425-40f4-99e5-8636344f4369.jpg?n=7400229_Super-Hero-1400_11223388_1920x1080_02.jpg" alt="Sample Image 3" class="image">
+              <div class="text bottom">Three new Xbox Series X|S consoles <br>
+                More storage and design options, coming Holiday 2024.<br>
+                <a href="https://www.xbox.com/consoles">EXPLORE NEW CONSOLES</a>
+                <a href="https://www.youtube.com/watch?v=mzDPNi77F24"> PLAY TRAILER</a>
+      </div>
+    </div>
+    </div>
+  </body>
 
-    .container {
-      position: relative;
-      width: 80%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .image {
-      display: block;
-      width: auto;
-      height: 100%;
-    }
-
-    .text {
-      position: absolute;
-      top: 65%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 40px;
-      padding: 10px;
-      text-align: center;
-    }
-  </style>
-
-  <div class="container">
-    <img
-      src="https://assets.xboxservices.com/assets/1f/0d/1f0d20cb-3bce-499c-a1f0-a593cf69948f.jpg?n=7400229_Super-Hero-1400_Dual-VisID_1920x1080_02.jpg"
-      alt="Sample Image"
-      class="image"
-    />
-    <div class="text">
-      Xbox Games Showcase followed by Call of Duty®: Black Ops 6 Direct
-      See the latest game trailers, world premieres, and news all in one place.
-    <a href="https://www.youtube.com/watch?v=ZZ6gafqCjsY">WATCH THE SHOW</a></div>
-  </div>
-
-</body>
 </html>
